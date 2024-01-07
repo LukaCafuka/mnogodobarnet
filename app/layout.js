@@ -1,5 +1,6 @@
 import { Inter } from 'next/font/google'
 import { Fira_Sans } from 'next/font/google'
+import Sidebar from '@/components/Sidebar'
 import './globals.css'
 
 const fira = Fira_Sans({ 
@@ -16,14 +17,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="hr">
       <head>
-      <link rel="icon" href="/favicon.ico" sizes="any" />
+      <link rel="icon" href="./favicon.ico" sizes="any" />
       </head>
       <body className={fira.className}>
-        <div className='flex'>
-          <div className='bg-red-500'>
-            {children}
+        <div className='grid flex-row grid-cols-8 grid-rows-none'>
+          <div className='bg-slate-800 hidden col-span-2'>
+            <Sidebar></Sidebar>
           </div>
-          <div className='bg-red-500'>
+          <div className='bg-zinc-950 col-span-full'>
             {children}
           </div>
           
