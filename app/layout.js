@@ -9,8 +9,9 @@ const fira = Fira_Sans({
  })
 
 export const metadata = {
-  title: 'mnogodobarnet',
-  description: 'Mreža kojoj možete vjerovati',
+  title: 'mnogodobar.net',
+  description: 'Projekt i mrežna infrastruktura koji bazira sebe da pomaže drugima, nudeći širi niz usluga koji su često i besplatni',
+    keywords: ['mnogodobar.net', 'mnogodobarnet', 'mreža', 'algebra', 'faks', 'student', 'materijali', 'portal', 'links', 'hrvatska', 'balkan', 'services', 'free', 'community', 'croatia', 'union'],
 }
 
 export default function RootLayout({ children }) {
