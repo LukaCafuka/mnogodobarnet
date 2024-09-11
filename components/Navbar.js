@@ -1,6 +1,5 @@
 'use client'
 import React from 'react'
-import {useState} from "react";
 import Image from "next/image";
 import Button from './Button'
 import logo from 'public/logoNew.png';
@@ -14,7 +13,7 @@ const Navbar = () => {
   return (
     <div className='bg-neutral-900 absolute end-0 start-0'>
       <div className='mx-2 flex flex-col sm:flex-row justify-between py-2'>
-        <div className='flex items-center'><Image className="bg-cover" src={logo}
+        <div className='flex items-center'><Image className="bg-cover" alt="logo" src={logo}
                                                                                    width={40}></Image></div>
         {/* Hamburger button for mobile */}
         <div className="sm:hidden flex justify-end">

@@ -14,7 +14,7 @@ const page = () => {
           <Navbar/>
           <div className='flex justify-center mx-2 pt-24 sm:pt-2 sm:pb-2 pb-12 flex-col sm:items-center items-start min-h-screen'>
 
-            <Image src={logo} className="mb-6 hidden sm:block" alt="Description" width={100} height={100}/>
+            <Image src={logo} className="mb-6 hidden sm:block" alt="Logo" width={100} height={100}/>
             <h2 className='text-4xl font-bold'>Dobrodošli na mnogodobar.net!</h2>
             <h2 className='md:text-lg text-md font-medium mb-4'>Ovo je glavna stranica i ujedino i web portal za usluge
               mnogodobar.net
@@ -27,8 +27,8 @@ const page = () => {
 
                 <Link className="drop-shadow animate-pulseSlow mb-4" href="http://ftp.mnogodobar.net"><Image
                     className="rounded-full drop-shadow bg-slate-900 border-2 border-pink-900" src={algebruh}
-                    height={70} width={70}></Image></Link>
-                <p className="text-sm ">Iznad se nalaze svi studentski materijali prikupljeni <span className="font-semibold">Algebrine Infoeduke</span></p>
+                    height={70} width={70} alt="Algebra Infoeduka"></Image></Link>
+                <p className="text-sm ">Iznad se nalaze svi studentski materijali prikupljeni sa <span className="font-semibold">Algebrine Infoeduke</span></p>
                 <p className="text-sm text-gray-500">U slučaju da stranica ne radi imamo druge geografske lokacije to
                   jest <i>mirrore</i> da održamo konstantan rad servera</p>
                 <div className="flex">
