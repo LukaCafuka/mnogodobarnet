@@ -34,7 +34,6 @@ const page = () => {
                 <div className="flex">
                   <Button destination="http://mirror3.ftp.mnogodobar.net">Mirror 1</Button>
                   <Button destination="http://mirror2.ftp.mnogodobar.net">Mirror 2</Button>
-                  <Button destination="http://mirror1.ftp.mnogodobar.net">Mirror 3</Button>
                 </div>
               </div>
             </div>
