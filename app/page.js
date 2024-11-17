@@ -25,15 +25,17 @@ const page = () => {
             <div className="flex bg-neutral-900 rounded mt-4 p-2">
               <div className="flex flex-col items-center justify-between">
 
-                <Link className="drop-shadow animate-pulseSlow mb-4" href="http://ftp.mnogodobar.net"><Image
+                <Link className="drop-shadow animate-pulseSlow mb-4" href="http://algebra.mnogodobar.net"><Image
                     className="rounded-full drop-shadow bg-slate-900 border-2 border-pink-900" src={algebruh}
                     height={70} width={70} alt="Algebra Infoeduka"></Image></Link>
+
                 <p className="text-sm ">Iznad se nalaze svi studentski materijali prikupljeni sa <span className="font-semibold">Algebrine Infoeduke</span></p>
                 <p className="text-sm text-gray-500">U slučaju da stranica ne radi imamo druge geografske lokacije to
                   jest <i>mirrore</i> da održamo konstantan rad servera</p>
                 <div className="flex">
-                  <Button destination="http://mirror3.ftp.mnogodobar.net">Mirror 1</Button>
-                  <Button destination="http://mirror2.ftp.mnogodobar.net">Mirror 2</Button>
+                  <Button destination="http://private.m.com.hr">Private Mirror</Button>
+                  <Button destination="http://mirror3.ftp.mnogodobar.net">Private Mirror 2</Button>
+                  <Button destination="http://mirror2.ftp.mnogodobar.net">Public Mirror</Button>
                 </div>
               </div>
             </div>
