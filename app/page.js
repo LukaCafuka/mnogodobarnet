@@ -12,14 +12,16 @@ const page = () => {
     <div className=''>
         <div className='relative left-0 right-0'>
           <Navbar/>
-          <div className='flex justify-center mx-2 pt-24 sm:pt-2 sm:pb-2 pb-12 flex-col sm:items-center items-start min-h-screen'>
+          <div
+              className='flex justify-center mx-2 pt-24 sm:pt-2 sm:pb-2 pb-12 flex-col sm:items-center items-start min-h-screen'>
 
             <Image src={logo} className="mb-6 hidden sm:block" alt="Logo" width={100} height={100}/>
             <h2 className='text-4xl font-bold'>Dobrodošli na mnogodobar.net!</h2>
-            <h2 className='md:text-lg text-md font-medium mb-4'>Ovo je glavna stranica i ujedino i web portal za usluge
+            <h2 className='md:text-lg text-md font-medium mb-4'>Ovo je glavna stranica i web portal za usluge
               mnogodobar.net
               infrastrukture</h2>
-            <h2 className='md:text-md text-sm font-medium border-b-2 pb-2'>Ispod možete pronaći poveznice koji vode do različitih
+            <h2 className='md:text-md text-sm font-medium border-b-2 pb-2'>Ispod možete pronaći poveznice koji vode do
+              različitih
               web lokacija</h2>
 
             <div className="flex bg-neutral-900 rounded mt-4 p-2">
@@ -29,16 +31,21 @@ const page = () => {
                     className="rounded-full drop-shadow bg-slate-900 border-2 border-pink-900" src={algebruh}
                     height={70} width={70} alt="Algebra Infoeduka"></Image></Link>
 
-                <p className="text-sm ">Iznad se nalaze svi studentski materijali prikupljeni sa <span className="font-semibold">Algebrine Infoeduke</span></p>
-                <p className="text-sm text-gray-500">U slučaju da stranica ne radi imamo druge geografske lokacije to
+                <p className="text-sm ">Iznad se nalaze svi studentski materijali prikupljeni sa <span
+                    className="font-semibold">Algebrine Infoeduke</span></p>
+                <p className="text-xs text-gray-500">U slučaju da stranica ne radi imamo druge geografske lokacije to
                   jest <i>mirrore</i> da održamo konstantan rad servera</p>
                 <div className="flex">
-                  <Button destination="http://private.m.com.hr">Private Mirror</Button>
-                  <Button destination="http://mirror3.ftp.mnogodobar.net">Private Mirror 2</Button>
                   <Button destination="http://mirror2.ftp.mnogodobar.net">Public Mirror</Button>
+                  <Button destination="http://private.m.com.hr">Private Mirror 1</Button>
+                  <Button destination="http://mirror3.ftp.mnogodobar.net">Private Mirror 2</Button>
                 </div>
+                <p className="text-sm mt-4 ">Ako želite skinuti svoje vlastite materijale sa Infoeduke,<br/>
+                  aplikacija <span className="font-semibold">InfoedukaScraper</span> se može instalirati <u className="text-blue-300"><Link
+                      href="https://github.com/LukaCafuka/infoeduka-scraper/releases/">ovdje</Link></u></p>
               </div>
             </div>
+            <p className="text-xs mt-6">Ostali mirrori se nalaze ispod</p>
             <div className="flex flex-wrap justify-center w-full">
               <Button destination="http://cdn.mnogodobar.net">CDN</Button>
               <Button destination="http://z.com.hr">Z</Button>
